@@ -38,11 +38,11 @@ genre.textContent = 'Drama';//1
 
 poster.style.backgroundImage = `url('img/bg.jpg')`;//2
 
-movieList.innerHTML = '';
+movieList.innerHTML = '';//3
 
 movieDB.movies.sort();
 
-console.log(poster.innerHTML);
+// console.log(poster.innerHTML);
 
 movieDB.movies.forEach((film, i) => {
     movieList.innerHTML += `
@@ -51,5 +51,7 @@ movieDB.movies.forEach((film, i) => {
     </li>
     `;
 }); 
+
+
 
 
